@@ -1,0 +1,21 @@
+# Street Rod Remastered - art pack
+
+The remastered pictures for [Street Rod Remastered](https://github.com/007hacky007/street-rod-remastered):
+every picture of *Street Rod* (California Dreams, 1989) redrawn as pixel art at four times the original
+resolution. The game repository includes this one as a git submodule (`art-pack`) and its builds copy it into
+the Windows zip and the Mac app.
+
+* `pack.json`: the pack format and the palette each picture was drawn in.
+* `pics/<sha1>.png`: the picture, RGBA, exactly 4x the original; `<sha1>` is the SHA-1 of the original
+  picture's packed bytes in the game's picture library.
+* `pics/<sha1>.idx.png`: the original palette index of every texel.
+
+How the pack is made and how the game shows it: `REMASTER.md` and `tools/remaster/README.md` in the game
+repository. A new or redone picture is a commit here, then the submodule is moved forward in the game
+repository.
+
+## Rights
+
+These pictures are derived from Street Rod's art, which belongs to its copyright owner. They are **not**
+covered by the game repository's MIT license, and no license is granted for them here. The original game is
+free from its copyright owner at <https://www.streetrodonline.com/downloads/>.
