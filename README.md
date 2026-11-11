@@ -10,6 +10,7 @@ one is out.
 * `pics/<sha1>.png`: the picture, RGBA, exactly 4x the original; `<sha1>` is the SHA-1 of the original
   picture's packed bytes in the game's picture library.
 * `pics/<sha1>.idx.png`: the original palette index of every texel.
+* `screenshots/`: the game with these pictures, shown in the game repository's README.
 
 How the pack is made and how the game shows it: `REMASTER.md` and `tools/remaster/README.md` in the game
 repository.
