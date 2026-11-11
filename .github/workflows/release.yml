@@ -1,0 +1,30 @@
+name: Release
+
+# A v* tag publishes the art as a release: the zip and the manifest the Street Rod Enhanced launcher reads
+# from the latest release.
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Pack
+        run: tools/make-release.sh "$GITHUB_REF_NAME"
+
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          gh release create "$GITHUB_REF_NAME" --repo "$REPO" dist/Street-Rod-Remastered-art.zip \
+            dist/Street-Rod-Remastered-art.txt --title "Art $GITHUB_REF_NAME" \
+            --notes "Remastered pictures, $GITHUB_REF_NAME. The Street Rod Enhanced launcher downloads the latest release."
