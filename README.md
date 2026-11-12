@@ -1,8 +1,9 @@
 # Street Rod Remastered - art pack
 
 The remastered pictures for [Street Rod Remastered](https://github.com/007hacky007/street-rod-remastered):
-every picture of *Street Rod* (California Dreams, 1989) redrawn as pixel art at four times the original
-resolution. The game's downloads don't include them: the launcher offers to download the latest release from
+every picture of *Street Rod* (California Dreams, 1989) and of *Street Rod 2: The Next Generation* (1991)
+redrawn as pixel art at four times the original resolution. A few stay the original's (the driver's licence, a
+mask, slivers too small to redraw). The game's downloads don't include them: the launcher offers to download the latest release from
 here (`Street-Rod-Remastered-art.txt`, then `Street-Rod-Remastered-art.zip`) and offers an update when a newer
 one is out.
 
@@ -23,6 +24,6 @@ format, and the zip's size and SHA-256. Launchers pick it up as the latest relea
 
 ## Rights
 
-These pictures are derived from Street Rod's art, which belongs to its copyright owner. They are **not**
-covered by the game repository's MIT license, and no license is granted for them here. The original game is
-free from its copyright owner at <https://www.streetrodonline.com/downloads/>.
+These pictures are derived from the art of Street Rod and Street Rod 2, which belongs to its copyright owner. They are **not**
+covered by the game repository's MIT license, and no license is granted for them here. The original games are
+free from their copyright owner at <https://www.streetrodonline.com/downloads/>.
